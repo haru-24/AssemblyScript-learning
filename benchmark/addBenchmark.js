@@ -11,6 +11,7 @@ function runSuite(suite) {
       console.log(this.filter('fastest').map('name') + ' won')
     })
     .run()
+  console.log('---------------------------------------------------------------')
 }
 
 function addTest() {
