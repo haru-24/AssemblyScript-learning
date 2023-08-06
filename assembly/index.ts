@@ -29,3 +29,15 @@ export function squareArrayGen(len: i32): Int32Array {
   }
   return result
 }
+
+export function fib(n: i32): i32 {
+  const result = [0, 1]
+
+  for (let i = 2; i <= n; i++) {
+    const a = result[i - 1]
+    const b = result[i - 2]
+
+    result.push(a + b)
+  }
+  return result[n]
+}

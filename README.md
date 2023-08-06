@@ -130,3 +130,36 @@ AssemblyScript x 208,484 ops/sec ±1.94% (86 runs sampled)
 JavaScript x 178,064 ops/sec ±2.54% (78 runs sampled)
 AssemblyScript won
 ```
+
+### fibonacci 関数
+
+コード
+
+```JS
+ function fib(n) {
+    const result = [0, 1]
+
+    for (let i = 2; i <= n; i++) {
+      const a = result[i - 1]
+      const b = result[i - 2]
+
+      result.push(a + b)
+    }
+    return result[n]
+  }
+```
+
+- Small len=10
+- Large len=2000
+
+```
+Running fibSmall
+AssemblyScript x 2,014,353 ops/sec ±2.82% (87 runs sampled)
+JavaScript x 18,910,662 ops/sec ±2.84% (86 runs sampled)
+JavaScript won
+---------------------------------------------------------------
+Running fibLarge
+AssemblyScript x 225,826 ops/sec ±2.83% (87 runs sampled)
+JavaScript x 875,388 ops/sec ±1.51% (87 runs sampled)
+JavaScript won
+```
