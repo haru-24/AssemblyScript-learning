@@ -60,13 +60,14 @@ JavaScript won
 
 ```
 Running factorialSmall
-AssemblyScript x 65,292,283 ops/sec ±0.76% (90 runs sampled)
-JavaScript x 68,965,802 ops/sec ±0.74% (88 runs sampled)
-JavaScript won
+AssemblyScript x 64,145,438 ops/sec ±2.26% (88 runs sampled)
+JavaScript x 63,444,465 ops/sec ±5.18% (84 runs sampled)
+AssemblyScript won
 ---------------------------------------------------------------
 Running factorialLarge
-AssemblyScript x 12,967,833 ops/sec ±1.94% (90 runs sampled)
-JavaScript x 12,994,578 ops/sec ±1.02% (91 runs sampled)
+AssemblyScript x 12,713,168 ops/sec ±1.31% (90 runs sampled)
+JavaScript x 13,122,202 ops/sec ±0.75% (92 runs sampled)
+JavaScript won
 ```
 
 ### squareArray 関数
